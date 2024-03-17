@@ -1,0 +1,41 @@
+﻿@using InitialStart.Models.Entities
+@model Product
+@{
+    ViewData["Title"] = "Helper";
+}
+
+<h1>Here is Main View : Helper => The Number is @Html.ViewBag.JustNumber</h1>
+<h5>@Model.Title from Main view : Helper</h5>
+
+
+@* Html.Partial *@
+@* @Html.Partial("~/Views/HtmlHelper/Partial/TestPartial.cshtml", new Category() { Id = 5, Name = "electronic" }) *@
+
+
+@* Html.RenderPartial *@
+@{
+    Html.RenderPartial("~/Views/HtmlHelper/Partial/TestPartial.cshtml");
+}
+
+@* Html.ActionLink *@
+@Html.ActionLink("go to homepage","Index","Home")
+<!---->
+
+@*Html.BeginForm*@
+@*Html.CheckBox*@
+@*Html.TextBox*@
+@*Html.Display*@
+@*Html.Password*@
+@*Html.TextArea*@
+@*Html.ValidationMessage*@
+
+@Html.BeginForm("Index","Home",FormMethod.Get){
+
+}
+
+
+<form action="index" method="post">
+
+
+</form>
+

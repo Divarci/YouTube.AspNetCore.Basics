@@ -1,0 +1,17 @@
+﻿@using InitialStart.Models.Entities
+@* @using InitialStart.Models.ViewModels
+@model ProductCategory
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h1>@Model.Product.Title</h1>
+<h1>@Model.Category.Name</h1>
+
+ *@
+
+
+ @model (Product product,Category category)
+
+<h1>@Model.product.Title</h1>
+<h1>@Model.category.Name</h1>

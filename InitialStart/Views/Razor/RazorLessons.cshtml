@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "RazorLessons";
+}
+
+<h1>RazorLessons</h1>
+
+
+@* What is the Razor : it is allow us to add C# codes in our html files and it becomes a cshtml file.*@
+@* How to make Comment Line *@
+@* How can we add C# code in cshtml file *@
+
+@{
+    string test = "We are using razor technology";
+    if (test.Length > 5)
+    {
+        Console.WriteLine("it is bigger than 5");
+    }
+    else
+    {
+        Console.WriteLine("it is not bigger than 5");
+
+    }
+}
+
+@* Scope and partial scope usage *@
+
+@{
+    test = "asdasd";
+}
+
+@* One line codes(eg. ternary op.)*@
+
+@(66%5 == 8 ? "yes" : "no")
+
+@* One Word codes*@
+
+@test
+
+@* @ usage with blocks*@
+
+@if (true)
+{
+    
+}
+
+@while (true)
+{
+    
+}
+
+@try
+{
+
+}
+catch (Exception)
+{
+    
+    throw;
+}
+
+@* how we can use html codes with c# codes*@
+
+<h1>@test</h1>
+
+@if (true)
+{
+    <h1>@(66 % 5 == 8 ? "yes" : "no") </h1>
+}
+@* skdnvksnvnsdv *@
+

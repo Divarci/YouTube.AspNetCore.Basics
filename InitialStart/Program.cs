@@ -34,4 +34,15 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "temporary",
+    pattern: "{controller=Home}/test/{action=Index}/{id?}");
+
+
+//  /Home/index/5
+//  /attribute/index
+
+
+// /index/5/home
+// /index/attribute
 app.Run();

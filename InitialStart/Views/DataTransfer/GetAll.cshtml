@@ -1,0 +1,49 @@
+﻿@using InitialStart.Models.Entities
+@* @using InitialStart.Models.Entities
+@model List<Product> *@
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@* ul>
+    @foreach (var product in Model)
+    {
+    <li>
+    @product.Title
+    </li>
+    }
+    </ul> *@
+
+<h5>ViewBag</h5>
+<ul>
+    @foreach (var product in ViewBag.ProductList as List<Product>)
+    {
+        <li>
+            @product.Title
+        </li>
+    }
+</ul>
+
+
+<h5>ViewData</h5>
+<ul>
+    @foreach (var product in ViewData["Products"] as List<Product>)
+    {
+        <li>
+            @product.Title
+        </li>
+    }
+</ul>
+
+
+<h5>Tempdata</h5>
+<ul>
+    @foreach (var product in TempData["Products"] as List<Product>)
+    {
+        <li>
+            @product.Title
+        </li>
+    }
+</ul>

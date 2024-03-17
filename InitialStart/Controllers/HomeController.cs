@@ -5,6 +5,10 @@ namespace InitialStart.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
         public IActionResult GetCategories()
         {
             return View();

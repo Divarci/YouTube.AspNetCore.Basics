@@ -1,0 +1,36 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@* @Html.BeginForm("index","TagHelper",FormMethod.Post);
+
+<form asp-action="index" asp-controller="TagHelper" method="post">
+
+    @Html.TextBox("something here")
+    <input type="text" >
+
+</form> *@
+
+@* <cache>
+    Date comes from cache : @DateTime.Now
+</cache>
+ Date comes from normal : @DateTime.Now *@
+
+@*  <environment names="Production">
+     <h5>I am coming from Production Environment</h5>
+ </environment>
+
+<environment names="Development">
+    <h5>I am coming from Development Environment</h5>
+</environment>
+ *@
+
+
+ @* <img src="path" asp-append-version=true /> *@
+
+@*  <h1>i am coming from main view page</h1>
+ <partial name="~/views/taghelper/partial/test.cshtml" /> *@

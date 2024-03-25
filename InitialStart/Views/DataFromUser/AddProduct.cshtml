@@ -1,0 +1,18 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<h1>AddProduct</h1>
+
+<form asp-action="AddProduct" asp-controller="DataFromUser" method="post">
+
+    <input type="text" name="Name" placeholder="Enter a name" />
+    <br />
+    <input type="text" name="Quantity" placeholder="Enter quantity" />
+    <br />
+    <input type="text" name="Price" placeholder="Enter price" />
+    <button>Send</button>
+</form>

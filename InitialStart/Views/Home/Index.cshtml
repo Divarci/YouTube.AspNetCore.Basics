@@ -1,8 +1,11 @@
-﻿
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
     ViewData["Title"] = "Index";
 
 }
 
 <h1>Index</h1>
+
+<a asp-controller="DataFromUserRoute" asp-action="Index" asp-route-id="8" asp-route-itemone="testone" asp-route-itemtwo="testtwo" asp-route-randomdata="we are testing">Click Me</a>
 

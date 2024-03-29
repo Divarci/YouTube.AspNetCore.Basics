@@ -31,12 +31,13 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+name: "default",
+pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapControllerRoute(
-    name: "temporary",
-    pattern: "{controller=Home}/test/{action=Index}/{id?}");
+//https://www.sitename.com/DataFromUserRoute/Index/5
+//app.MapControllerRoute(
+//name: "temporary",
+//    pattern: "{controller=Home}/{action=Index}/{id?}/{itemone?}/{itemtwo?}");
 
 
 //  /Home/index/5

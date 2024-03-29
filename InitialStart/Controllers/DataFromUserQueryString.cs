@@ -8,7 +8,7 @@ namespace InitialStart.Controllers
         #region Explanation
         #endregion
         //if we have an information that doesnt needs to be secured, we can send this data using URL.
-        //https:www.sitename.com/datafromuserquerystring/datareceive?itemOne=5&itemtwo=london
+        //https://www.sitename.com/datafromuserquerystring/datareceive?itemOne=5&itemtwo=london
 
         #region CatchByParameters
         #endregion

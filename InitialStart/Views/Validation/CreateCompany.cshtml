@@ -1,0 +1,28 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using InitialStart.Models.Entities
+@model Company
+@{
+    ViewData["Title"] = "CreateCompany";
+}
+
+<form asp-controller="Validation" asp-action="CreateCompany" method="post">
+
+    <input type="text" asp-for="CompanyName" placeholder="Company Name" />   <br />
+    <span class="text-danger" asp-validation-for="CompanyName"></span>
+    <br/>
+    <input type="text" asp-for="Address" placeholder="Address" />   <br />
+    <span class="text-danger" asp-validation-for="Address"></span>
+    <br />
+    <input type="text" asp-for="Phone" placeholder="Phone Number" />   <br />
+    <span class="text-danger" asp-validation-for="Phone"></span>
+    <br />
+    <input type="email" asp-for="Email" placeholder="Company Email Address" />   <br />
+    <span class="text-danger" asp-validation-for="Email"></span>
+    <br />
+    <input type="number" asp-for="EmployeeCount" placeholder="Employee Count" />   <br />
+    <span class="text-danger" asp-validation-for="EmployeeCount"></span>
+    <br />
+
+    <button>Send Data</button>
+</form>
+

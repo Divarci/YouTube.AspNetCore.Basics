@@ -19,6 +19,14 @@ namespace InitialStart.Controllers
         #region EXAMPLE
         #endregion
 
+        public IActionResult Test()
+        {
+            return View();
+        }
+        public IActionResult Test2()
+        {
+            return View();
+        }
         [HttpGet]
         public ActionResult CreateCompany()
         {

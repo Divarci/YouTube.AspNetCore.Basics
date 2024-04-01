@@ -3,20 +3,18 @@
 namespace InitialStart.Models.Entities
 {
     public class Company
-    {
-        [StringLength(25,ErrorMessage ="opps it is more than 25")]
-        [Required(ErrorMessage ="hey bro add a company name")]
-        public string CompanyName { get; set; }
-        [StringLength(50, ErrorMessage = "opps it is more than 50")]
-        [Required(ErrorMessage = "hey bro add an address")]
+    {       
+        public string CompanyName { get; set; }      
         public string Address { get; set; }
-        public string? Phone { get; set; }
-        [EmailAddress(ErrorMessage ="please input valid email address")]
-        [Required(ErrorMessage = "I need an email")]
+        public string? Phone { get; set; }        
         public string Email { get; set; }
         public int? EmployeeCount { get; set; }
     }
 }
+
+//1- this class is an entity => keeps our properties located in databese
+//2- this class demonstrate results to user
+//3- this class contains validations
 
 
 //company name must be lower than 25 character

@@ -1,8 +1,12 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@using InitialStart.Models.Entities
-@model Company
+@using InitialStart.Models.ViewModels
+@model CompanyListVM
 @{
     ViewData["Title"] = "CreateCompany";
+}
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial")
 }
 
 <form asp-controller="Validation" asp-action="CreateCompany" method="post">
@@ -18,9 +22,6 @@
     <br />
     <input type="email" asp-for="Email" placeholder="Company Email Address" />   <br />
     <span class="text-danger" asp-validation-for="Email"></span>
-    <br />
-    <input type="number" asp-for="EmployeeCount" placeholder="Employee Count" />   <br />
-    <span class="text-danger" asp-validation-for="EmployeeCount"></span>
     <br />
 
     <button>Send Data</button>

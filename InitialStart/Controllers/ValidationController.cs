@@ -1,4 +1,5 @@
 ﻿using InitialStart.Models.Entities;
+using InitialStart.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InitialStart.Controllers
@@ -25,7 +26,7 @@ namespace InitialStart.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateCompany(Company request)
+        public ActionResult CreateCompany(CompanyListVM request)
         {
             //modelsate
 

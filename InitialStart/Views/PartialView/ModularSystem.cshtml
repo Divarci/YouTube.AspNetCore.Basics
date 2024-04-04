@@ -1,0 +1,11 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "ModularSystem";
+}
+
+<h1>@Model[0]</h1>
+<h1>@Model[1]</h1>
+<h1>@Model[2]</h1>
+
+<partial name="~/views/partialview/partials/_mspartial.cshtml" model="@ViewBag.listTwo" />
+

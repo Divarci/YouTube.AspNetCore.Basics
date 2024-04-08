@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace Routing.Controllers
 {
-    [Route("custom")]
+    //[Route("custom")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -14,13 +14,13 @@ namespace Routing.Controllers
             _logger = logger;
         }
 
-        [Route("[action]/{id:int?}")]
+        //[Route("[action]/{id:int?}")]
         public IActionResult Index(int id)
         {
             return View();
         }
 
-        [Route("random")]
+        //[Route("random")]
         public IActionResult Privacy()
         {
             return View();

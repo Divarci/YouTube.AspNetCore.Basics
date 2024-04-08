@@ -43,11 +43,20 @@ app.UseAuthorization();
 //    pattern: "{action=Index}/somestaticpage/{controller=Home}/{id?}");
 
 
-//app.MapDefaultControllerRoute();
+app.MapDefaultControllerRoute();
 
-app.MapControllers();
+//app.MapControllers();
 
 //www.somesite.com/ => default parametrrs will be initialized
 //www.somesite.com/Home =default action paramete will be initialized
+
+//app.Map("test-test", async c =>
+//{
+//    // www.localhost:5487/test-test
+
+//    await c.Response.WriteAsync("i am coming from test route");
+//});
+
+app.Map("test/newRoute", new CustomRouteHandler().Handler());
 
 app.Run();

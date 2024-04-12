@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>AdminPage</h1>
+
+@Html.ActionLink("Go To User Panel","Index","Home",new {area="UserPanel"})
+
+<a asp-action="Index" asp-controller="Home" asp-area="UserPanel">Go to User with Tag helper</a>
+
+

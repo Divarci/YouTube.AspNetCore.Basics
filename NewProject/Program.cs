@@ -42,6 +42,23 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//app.MapControllerRoute(
+//    name: "default_area",
+//    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "admin_panel",
+    areaName: "Administration",
+    pattern: "randomtext/{controller=Home}/{action=Index}/{id?}"
+
+    );
+app.MapAreaControllerRoute(
+    name: "user_oage",
+    areaName: "UserPanel",
+    pattern: "lalala/{controller=Home}/{action=Index}/{id?}"
+
+    );
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

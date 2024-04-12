@@ -1,4 +1,5 @@
 using NewProject.Controllers;
+using NewProject.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,9 +22,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IVehicle,SelectBicycle>();
 builder.Services.AddScoped<MakeHoliday>();
 
+builder.Services.AddScoped<ExceptionFilterAdd>();
+builder.Services.AddScoped<ResourceFilterAdd>();
+builder.Services.AddScoped<ActionFilterAdd>();
+builder.Services.AddScoped<ResultFilterAdd>();
+builder.Services.AddScoped<AuthorizationFilterAdd>();
 
-
-
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routing", "Routing\Routing.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middleware", "Middleware\Middleware.csproj", "{85218B9C-9D26-4562-8EF8-0BF367359678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewProject", "NewProject\NewProject.csproj", "{DB700073-593A-4C91-BE6C-EA480076BF6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewProject", "NewProject\NewProject.csproj", "{DB700073-593A-4C91-BE6C-EA480076BF6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettingsJson", "AppSettingsJson\AppSettingsJson.csproj", "{6D6CE79D-94D7-4AB2-9EE4-B92B94F9146A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DB700073-593A-4C91-BE6C-EA480076BF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB700073-593A-4C91-BE6C-EA480076BF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB700073-593A-4C91-BE6C-EA480076BF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6CE79D-94D7-4AB2-9EE4-B92B94F9146A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6CE79D-94D7-4AB2-9EE4-B92B94F9146A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6CE79D-94D7-4AB2-9EE4-B92B94F9146A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6CE79D-94D7-4AB2-9EE4-B92B94F9146A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

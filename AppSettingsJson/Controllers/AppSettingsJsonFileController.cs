@@ -76,11 +76,14 @@ namespace AppSettingsJson.Controllers
             var emailAddress = _configuration["EmailSettings:Email:Address"];
             var password = _configuration["EmailSettings:Email:Password"];
 
+            var testPurposePass = _configuration["EmailPassword"];
+
             var host2 = _configuration.GetSection("EmailSettings:Host");
 
             var emailInfo = _configuration.GetSection("EmailSettings").Get(typeof(EmailSettings));
 
             var emailInfo2 = _emailSettings;
+            emailInfo2.Email.Password = Environment.GetEnvironmentVariable("EmailPassword");
 
             return View();
         }

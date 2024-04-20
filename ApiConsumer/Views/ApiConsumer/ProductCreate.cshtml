@@ -1,0 +1,12 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "ProductCreate";
+}
+
+
+<form asp-action="ProductCreate" method="post">
+    <input type="number" asp-for="Id" placeholder="ID" /><br />
+    <input type="text" asp-for="Name" placeholder="NAME" /><br />
+    <input type="number" asp-for="Quantity" placeholder="QUANTITY" /><br />
+    <button class="btn btn-primary">Create</button>
+</form>

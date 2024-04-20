@@ -63,7 +63,7 @@ namespace ApiProject.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var itemList = DummyData.Products;
